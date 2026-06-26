@@ -1,19 +1,10 @@
-function changeColor(color) {
-    document.body.style.backgroundColor = color;
-}
+const header = document.querySelector("header")
+const menuBtn = document.querySelector("menu-btn")
+const closeMenuBtn = document.querySelector("#close-menu-btn")
 
-function randomColor() {
-    const colors = [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#F39C12",
-        "#9B59B6",
-        "#1ABC9C",
-        "#E74C3C",
-        "#2ECC71"
-    ];
-
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    document.body.style.backgroundColor = colors[randomIndex];
-}
+menuBtn.addEventListener("click", ()=>{
+    header.classList.toggle("show-mobile-menu")
+})
+closeMenuBtn.addEventListener("click", ()=>{
+    menuBtn.click()
+})
