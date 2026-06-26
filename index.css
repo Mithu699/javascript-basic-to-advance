@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+  background: url("coffee-hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.navbar .logo {
+    color: #fff;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.navbar .logo span {
+  color: #c06b3e;
+}
+.navbar .menu-link {
+  display: flex;
+  gap: 40px;
+}
+
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #c06b3e;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-section .content {
+  color: white;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-section .content h1 {
+  font-size: 3rem;
+  max-width: 600px;
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  margin-top: 15px;
+  max-width: 600px;
+}
+
+
+.hero-section .content button{
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+.hero-section .content button:hover{
+    color: white;
+background-color: #c06b3e;
+}
+#menu-btn{
+    color: #fff;
+    cursor:pointer;
+    
+}
+#close-btn{
+    display: none;
+
+position:absolute;
+right: 20px;
+cursor: pointer;
+ top: 20px;
+
+
+}
+
+@media screen and (max-width: 900px){
+    #close-btn, #menu-btn{
+        display: block;
+    }
+    .navbar .menu-link{
+       position:fixed;
+       left: -260px;
+       top: 0;
+       flex-direction: column;
+       width: 260px;
+       height: 100vh;
+       background: white;
+       padding: 70px 40px 0;
+      transition: left 0.15s ease;
+    }
+
+
+    .navbar a{
+        color: #000;
+        header.show-mobile-menu .navbar.menu-link{
+
+}
+
+
+    }
+
+}
